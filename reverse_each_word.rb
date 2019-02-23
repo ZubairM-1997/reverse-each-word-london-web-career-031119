@@ -9,7 +9,15 @@ end
 
 #.collect method
 
-def reverse_each_word(array)
-  array.split(" ").collect {|x| x.reverse!}.join(" ")
-end
+original_words = "Hello, my name is Zubair"
+
+words = original_words.split(",")
+
+def reversed_Wordds(words)
+  words.collect do |x|
+    x.reverse
+  end 
+end 
+
+reversed_Wordds(words).join(",")
 
